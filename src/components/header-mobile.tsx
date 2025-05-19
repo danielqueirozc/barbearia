@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from "react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 
@@ -11,9 +9,11 @@ export function HeaderMobile() {
     }
 
     return (
-        <header className="flex items-center p-7">
-            <div>
-                
+        <header className="flex items-center justify-between p-7">
+            <div className="text-[#9D7230] flex flex-col gap-2.5">
+                <h1 className="text-4xl font-bold tracking-widest">Даниэль</h1>
+                <div className="w-full h-1 bg-[#9D7230]" />
+                <h2 className="uppercase text-sm">Barbershop</h2>
             </div>
 
             <Sheet>
